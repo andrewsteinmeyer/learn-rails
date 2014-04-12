@@ -60,6 +60,8 @@ GEM
       nokogiri (>= 1.4.4, != 1.5.2, != 1.5.1)
       oauth (>= 0.3.6)
       oauth2 (>= 0.5.0)
+    haml (4.0.5)
+      tilt
     high_voltage (2.1.0)
     hike (1.2.3)
     httparty (0.13.1)
@@ -173,6 +175,7 @@ DEPENDENCIES
   foundation-rails
   gibbon
   google_drive
+  haml
   high_voltage
   jbuilder (~> 2.0)
   jquery-rails

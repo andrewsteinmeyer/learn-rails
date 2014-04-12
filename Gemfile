@@ -16,6 +16,7 @@ gem 'activerecord-tableless'
 gem 'foundation-rails'
 gem 'figaro'
 gem 'rspec-rails'
+gem 'haml'
 
 # access to MailChimp API
 gem 'gibbon'
