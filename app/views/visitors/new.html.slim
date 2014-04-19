@@ -1,4 +1,17 @@
-h3 Home
-p Welcome to the home of #{@owner.name}
-p I was born on #{@owner.birthdate}
-p Only #{@owner.countdown} days until my birthday!
+= content_for(:title) do
+  | Penny Steinmeyer
+= content_for(:description) do
+  | Website of Penny Steinmeyer
+section
+ = image_tag "penny.png"
+section
+  .column
+    h2 Stay in touch.
+  .form
+    = simple_form_for @visitor do |f|
+      = f.error_notification
+      = f.input :email, label: false, :placeholder => 'Your email address...'
+      br
+      = f.button :submit, "Sign up for the newsletter", class: 'submit'
+
+
