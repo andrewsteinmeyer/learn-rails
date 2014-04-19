@@ -11,13 +11,16 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'spring',        group: :development
+gem 'spring', group: :development
 gem 'activerecord-tableless'
 gem 'foundation-rails'
 gem 'figaro'
 gem 'rspec-rails'
 gem 'slim'
 gem 'slim-rails'
+gem 'pg'
+gem 'thin'
+gem 'rails_12factor'
 
 # access to MailChimp API
 gem 'gibbon'
