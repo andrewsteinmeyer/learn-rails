@@ -10,16 +10,23 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'spring', group: :development
 gem 'activerecord-tableless'
 gem 'foundation-rails'
 gem 'figaro'
 gem 'rspec-rails'
 gem 'slim'
 gem 'slim-rails'
-gem 'pg'
+
+gem 'pg', '~> 0.17.1'
 gem 'thin'
 gem 'rails_12factor'
+
+gem 'capistrano', '~> 3.0.1'
+gem 'capistrano-rails', '~> 1.1.0'
+gem 'capistrano-bundler'
+gem 'capistrano-rbenv', '~>2.0'
+gem 'capistrano-sidekiq'
+
 
 # access to MailChimp API
 gem 'gibbon'
@@ -35,6 +42,7 @@ group :development do
   gem 'binding_of_caller'
   gem 'quiet_assets'
   gem 'rails_layout'
+	gem 'spring'
 end
 
 # Use ActiveModel has_secure_password
