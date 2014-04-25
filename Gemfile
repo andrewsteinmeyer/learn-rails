@@ -16,6 +16,7 @@ gem 'figaro'
 gem 'rspec-rails'
 gem 'slim'
 gem 'slim-rails'
+gem 'sidekiq'
 
 gem 'pg', '~> 0.17.1'
 gem 'thin'

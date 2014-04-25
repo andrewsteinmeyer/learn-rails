@@ -40,6 +40,8 @@ set(:config_files, %w(
   server.key
   unicorn.rb
   unicorn_init.sh
+  sidekiq.yml
+  sidekiq_init.sh
 ))
 
 # which config files should be made executable after copying
@@ -73,8 +75,8 @@ set(:symlinks, [
     link: "/etc/monit/conf.d/{{full_app_name}}.conf"
   },
   {
-    source: "sidekiq",
-    link: "/etc/sidekiq/init.d/{{full_app_name}}.conf"
+    source: "sidekiq_init.sh",
+    link: "/etc/init.d/sidekiq_{{full_app_name}}"
   }
 ])
 
